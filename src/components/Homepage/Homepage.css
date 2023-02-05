@@ -1,0 +1,334 @@
+body, html, #app {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Whole webpage */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* introduction section */
+.intro-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    padding-bottom: 30%;
+}
+
+.intro-text {
+    font-size: 300%;
+    color: bisque;
+    position: relative;
+}
+
+.profile-pic {
+    display: flex;
+    width: 30%;
+    border-radius: 30%;
+}
+
+/* This section projects what I have done so far */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+.proj-title {
+    color:rgba(155, 239, 245, 0.8);
+    font-size: 200%;
+    letter-spacing: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    animation: letter-flicker 4s linear infinite;
+    animation: text-flicker 4s linear infinite;
+} 
+
+@keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    
+    
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+}
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgba(242, 22, 22, 1);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+}
+
+.cards-scroller {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 60px;
+    justify-content: center;
+}
+
+
+/* About me  */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  color:rgba(155, 239, 245, 0.8);
+  font-size: 200%;
+  letter-spacing: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  animation: letter-flicker 4s linear infinite;
+  animation: text-flicker 4s linear infinite;
+} 
+
+
+.about-text {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: bisque;
+}
+
+.learn-more-text {
+    padding-top: 10%;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: bisque;
+    padding-bottom: 3%;
+}
+
+.resume-button {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    width: 15rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    border-style:solid;
+}
+
+.resume-button:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0px 20px 20px -13px;
+}
+
+/* personal page */
+.personal-section {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+.personal-title {
+  color:rgba(155, 239, 245, 0.8);
+  font-size: 200%;
+  letter-spacing: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  animation: letter-flicker 4s linear infinite;
+  animation: text-flicker 4s linear infinite;
+} 
+
+/* contact page */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  margin: 0;
+  padding: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.contact-list {
+  margin-top: 5%;
+}
+
+.contact-item {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 30px;
+}
+
+#contact-text {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-title {
+  color:rgba(155, 239, 245, 0.8);
+  font-size: 200%;
+  letter-spacing: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  animation: letter-flicker 4s linear infinite;
+  animation: text-flicker 4s linear infinite;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-container {
+    background-color: white;
+}
+
+.about-container {
+    background-color: blue;
+}
+
+.lifestyle-container {
+    background-color: white;
+}
+
+.contact-container {
+    background-color: green;
+}
