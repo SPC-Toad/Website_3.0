@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@1,400;1,500&display=swap');
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 15rem;
+    height: 5rem;
+    background-color: black;
+    color: rgba(255,255,255, .3);
+    box-shadow: 0px 0px 20px rgb(255, 138, 187);
+    border-style: solid;
+    border-width: .2rem;
+    border-color: rgb(255, 138, 187);
+    letter-spacing: .7rem;
+    font-family: 'Expletus Sans', cursive;
+}
+
+.start-button:hover {
+    transform: translateY(-.3rem);
+    background-color: 0px 0px 40px rgb(255, 138, 187);
+    box-shadow: 0px 0px 40px rgb(255, 138, 187), 0px 0px 60px rgb(255, 138, 187),
+    0px 0px 70px rgb(255, 138, 187),0px 0px 80px rgb(255, 138, 187);
+    color: rgba(255,255,255, 1);
+    animation: start-flicker 5s linear infinite;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes start-flicker {
+    0% {
+      color: rgba(255, 255, 255, 0.3);
+      text-shadow: 0px 0px 29px rgba(255, 138, 187, 0.1);
+    }
+    2% {
+      color: rgba(255, 255, 255, 0.3);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, .1);
+    }
+    4% {
+      color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, 1);
+    }
+    
+    
+    19% {
+        color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, 1);
+    }
+    21% {
+        color: rgba(255, 255, 255, 0.3);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, .1);
+    }
+    23% {
+        color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, 1);
+    }
+    
+    80% {
+        color: rgba(255, 255, 255, 0.7);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, .4);
+    }
+    83% {
+        color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, 1);
+    }
+    87% {
+        color: rgba(255, 255, 255, 1);
+      text-shadow: 0px 0px 29px rgb(255, 138, 187, 1);
+    }
+}

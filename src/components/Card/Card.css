@@ -17,10 +17,11 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    width: 100%;
+    object-fit: cover;
     height: 33vh;
     border-radius: 10px;
 }
+
 
 .card-title {
     font-size: 140%;
@@ -31,12 +32,12 @@ h3 {
     margin-block-start: 1vh;
     margin-block-end: 1vh;
 }
+
 .body-text {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
     overflow-y: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     font-weight: 600;
     height: 10vh;

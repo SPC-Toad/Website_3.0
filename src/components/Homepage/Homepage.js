@@ -2,6 +2,7 @@ import React from 'react'
 import profile from '../visual/profile.png';
 import website1 from '../visual/old-website.png';
 import website2 from '../visual/new-website.png';
+import website3 from '../visual/Website3.PNG'
 import cqb from '../visual/cqb2.jpg';
 
 
@@ -11,10 +12,12 @@ import SkillBar from '../SkillBar/SkillBar';
 import resume from '../../components/visual/Resume.pdf'
 import * as AiIcons from 'react-icons/ai';
 import { IconContext } from 'react-icons';
+import Navbar from '../Navbar/Navbar';
 
 function Homepage() {
   return (
     <div className='container'>
+        <Navbar />
         <section className='intro-section' id='Home'>
             <p className='intro-text'>
                 Hello there,<br/>
@@ -25,7 +28,7 @@ function Homepage() {
         </section>
 
         <section className='project-section' id='Project'>
-            <div className='proj-title'>PROJECTS</div>
+            <div className='title'>PROJECTS</div>
             <div className='cards-scroller'>
                 <Card 
                     title='Front-end (React.js)'
@@ -35,7 +38,7 @@ function Homepage() {
                     different pages such as: home, about, contact page. 
                     Ensured website functions as intended.
                     '
-                    background_image={ profile }
+                    background_image={ website3 }
                 />
                 <Card 
                     title='Front-end (React.js)'
@@ -70,7 +73,7 @@ function Homepage() {
 
 
         <section className='about-section' id='About'>
-            <div className='about-title'>ABOUT ME</div>
+            <div className='title'>ABOUT ME</div>
             <p className='about-text'>
             I'm a Software Engineer who enjoys developing web-pages and data structures!<br/><br/>
             I'm currently pursuing a bachelor's degree in computer science at the
@@ -122,12 +125,12 @@ function Homepage() {
 
 
         <section className='personal-section' id='Personal'>
-            <div className='personal-title'>Personal</div>
+            <div className='title'>Personal</div>
         </section>
 
         <IconContext.Provider value={{ color: "white" }}>
             <section className='contact-section' id='Contact'>
-                <div className='contact-title'>GET IN TOUCH</div>
+                <div className='title'>GET IN TOUCH</div>
                 <ul className='contact-list'>
                     <a className='contact-item' href='https://github.com/SPC-Toad'>
                         <AiIcons.AiOutlineGithub />
