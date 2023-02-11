@@ -31,11 +31,11 @@ function Homepage() {
             <div className='title'>PROJECTS</div>
             <div className='cards-scroller'>
                 <Card 
-                    title='Front-end (React.js)'
+                    title='Front-end (CSS Focused)'
                     description='
-                    Developed personal website using React JavaScript. 
+                    Developed personal website using React.js. 
                     Understanding router and router-DOM to navigate through 
-                    different pages such as: home, about, contact page. 
+                    different pages. 
                     Ensured website functions as intended.
                     '
                     background_image={ website3 }
@@ -62,10 +62,10 @@ function Homepage() {
                 />
                 <Card 
                     title='Annual Training'
-                    description='Developed personal website using React JavaScript. 
-                    Understanding router and router-DOM to navigate through different 
-                    pages such as: home, about, contact page. Ensured website functions as 
-                    intended.'
+                    description='
+                    Worked in 94th MP Company to inspect, service, maintain, repair, and test HMMWV, MTV, LMTV, and FMTV for 382nd
+                    Brigade. Experienced Field Training. Assisted Close Quarter Combat and hostage rescue scenarios alongside Military Police
+                    '
                     background_image={ cqb }
                 />
             </div>
